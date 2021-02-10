@@ -106,6 +106,7 @@ body {
       margin: auto;
       min-height: 100%;
       padding: 3rem 0;
+      color: #29434e;
   }
 
   h2, p {
@@ -118,7 +119,6 @@ body {
 
   /* style about me section  */
   .about {
-      color: #29434e;
       padding: 2rem;
       display: flex;
       flex-direction: row-reverse;
@@ -148,6 +148,77 @@ body {
       display: block;
       padding-right: 3rem;
   }
+  /* end about styling  */
+  /* start projects section  */
+  .projects h2 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font: 1.5rem;
+    padding: 2rem;
+  }
+
+  .projects > ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 1rem;
+      list-style-type: none;
+      padding: 2rem;
+  }
+
+  .projects > ul > li {
+      border: 1px solid #29434e;
+      border-radius: 0.5rem;
+  }
+
+  .projects > ul > li > figure {
+      max-height: 220px;
+      overflow: hidden;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      position: relative;
+  }
+
+  .projects > ul > li > figure > img {
+      width: 100%;
+  }
+
+  .projects > ul > li > figure > figcaption {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+  }
+
+  .projects > ul > li > figure > figcaption > h3 {
+      color: #fff;
+      padding: 0.75rem;
+      font-size: 1.25rem;
+  }
+
+  .projects > ul > li > p {
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 1rem 0.75rem;
+  }
+
+  .projects > ul > li > a {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      background-color: #29434e;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 0.25rem;
+      text-align: center;
+      display: inline-block;
+      transition: all 0.3s;
+  }
+
+  .projects > ul > li > a:hover {
+      opacity: 0.6;
+  }
+
+
+
 
 
 
