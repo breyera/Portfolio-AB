@@ -11,6 +11,10 @@ body {
     line-height: 1.4em;
   }
 
+  a:visited {
+      color: inherit;
+  }
+
   /* style nav  */
   .navbar {
       font-size: 1.2rem;
@@ -86,7 +90,7 @@ body {
   }
  
   nav span {
-      color: #8eacbb;
+      color: #6b98af;
   }
   /* end nav styling  */
   /* start hero  */
@@ -149,6 +153,11 @@ body {
       text-transform: uppercase;
       letter-spacing: 0.225em;
       margin-block-end: 2em;
+      transition: all .3s;
+  }
+
+  .hero > .btn:hover {
+      opacity: .6;
   }
 
   /* start main styling  */
@@ -192,7 +201,8 @@ body {
   .about h2 {
       letter-spacing: 3px;
       text-transform: uppercase;
-      font: 1.5rem;
+      font: 2rem;
+      padding-bottom: 2rem;
   }
 
   .about p {
@@ -204,7 +214,7 @@ body {
   .projects h2 {
     letter-spacing: 3px;
     text-transform: uppercase;
-    font: 1.5rem;
+    font: 2rem;
     padding: 2rem;
   }
 
@@ -213,7 +223,7 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       grid-gap: 1rem;
       list-style-type: none;
-      padding: 2rem;
+      padding: 0 2rem 2rem;
   }
 
   .projects > ul > li {
@@ -274,6 +284,85 @@ body {
   .projects > ul > li:first-child {
       grid-column: span 2;
   }
+  /* end projects section styles  */
+  /* start contact section  */
+  .contact {
+      display: flex;
+      margin: 0 auto;
+  }
+
+  #contact h2 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font: 2rem;
+    padding: 2rem 2rem 0;
+  }
+
+  .contact section {
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .contact .more-info, .contact .connect {
+      flex: 1 1 0;
+      width: 0;
+  }
+
+  .contact h3 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font: 1.5rem;
+      padding-bottom: 1rem;
+  }
+
+  .contact .more-info p {
+      margin-bottom: 1rem;
+      text-align: center;
+      max-width: 80%;
+  }
+
+  .contact .more-info .contact-info span {
+      display: block;
+      font-size: 1.1em;
+      margin-top: 1rem;
+      text-align: center;
+      line-height: 2rem;
+  }
+
+  .contact .more-info .contact-info span a {
+      color: inherit;
+      transition: all .3s;
+  }
+
+  .contact .more-info .contact-info span a:hover {
+      opacity: 0.6;
+  }
+
+  .contact .connect {
+      border-left: 2px solid #e2e2e2;
+  }
+
+  .contact .connect .socials {
+      margin-top: 2rem;
+  }
+
+  .contact .connect .socials a {
+      padding: .5rem;
+      font-size: 2rem;
+      color: inherit;
+      transition: all linear .3s;
+  }
+
+  .contact .connect .socials a:hover {
+      opacity: 0.6;
+      font-size: 3rem;
+  }
+
+
+
 
 
 
