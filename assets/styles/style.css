@@ -7,14 +7,14 @@
 body {
     height: 100%;
     font: normal 16px Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: #fafafa;
     line-height: 1.4em;
   }
 
   /* style nav  */
   .navbar {
       font-size: 1.2rem;
-      background-color: #1c313a;
+      background-color: #fafafa;
       display: flex;
       justify-content: space-between;
       padding-bottom: 0;
@@ -33,20 +33,20 @@ body {
 
   .nav-link, .logo {
       text-decoration: none;
-      color: #FFF;
+      color: #000;
   }
 
   .main-nav li {
       text-align: center;
       margin-left: 2.5rem;
-      color: #FFF;
+      color: #000;
   }
 
   .main-nav li {
     position: relative;
     display: block;
     text-decoration: none;
-    color: #FFF;
+    color: #000;
     padding: 6px 0;
     transition: 0.5s;
     font-size: 1.3rem;
@@ -59,14 +59,14 @@ body {
     height: 3px;
     top: 100%;
     left: 0;
-    background: #e0e0e0;
+    background: #455a64;
     transition: transform 0.5s;
     transform: scaleX(0);
     transform-origin: right;
 }
 
   .main-nav li:hover {
-      color: #e0e0e0;
+      color: #455a64;
   }
 
   .main-nav li:hover::after {
@@ -86,7 +86,69 @@ body {
   }
  
   nav span {
-      color: #b3e5fc;
+      color: #8eacbb;
   }
+  /* end nav styling  */
+  /* start hero  */
+  .bg-img {
+      background-image: url('../images/hero-image.jpg');
+      background-color: #34515f;
+      min-height: 500px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  }
+
+
+  /* start main styling  */
+  main {
+      width: 80%;
+      margin: auto;
+      min-height: 100%;
+      padding: 3rem 0;
+  }
+
+  h2, p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+
+  /* style about me section  */
+  .about {
+      color: #29434e;
+      padding: 2rem;
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: justify;
+      align-items: center;
+      position: relative;
+  }
+
+  .about img {
+      border-radius: 50%;
+      width: 30%;
+      max-height: 750px;
+      max-width: 750px;
+  }
+
+  .about div {
+      display: block;
+  }
+
+  .about h2 {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font: 1.5rem;
+  }
+
+  .about p {
+      display: block;
+      padding-right: 3rem;
+  }
+
+
 
   
