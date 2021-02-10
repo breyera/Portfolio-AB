@@ -33,20 +33,20 @@ body {
 
   .nav-link, .logo {
       text-decoration: none;
-      color: #000;
+      color: #29434e;
   }
 
   .main-nav li {
       text-align: center;
       margin-left: 2.5rem;
-      color: #000;
+      color: #29434e;
   }
 
   .main-nav li {
     position: relative;
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #29434e;
     padding: 6px 0;
     transition: 0.5s;
     font-size: 1.3rem;
@@ -93,12 +93,63 @@ body {
   .bg-img {
       background-image: url('../images/hero-image.jpg');
       background-color: #34515f;
-      min-height: 500px;
+      min-height: 700px;
       background-position: center;
       background-size: cover;
       position: relative;
   }
 
+  .hero {
+      display: block;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border-radius: 0.25em;
+  }
+
+  .hero > h1 {
+      font-weight: 800;
+      letter-spacing: .225em;
+      line-height: 1.75em;
+      font-size: 2em;
+      text-transform: uppercase;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+
+  .hero > p {
+      letter-spacing: 0.225em;
+      text-transform: uppercase;
+      margin: 0 0 2em;
+      margin-block-start: 1em;
+      margin-block-end: 2em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding: 0 2rem;
+  }
+
+  .hero > .btn {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      background-color: #6b98af;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 0.25rem;
+      text-align: center;
+      display: inline-block;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 0.225em;
+      margin-block-end: 2em;
+  }
 
   /* start main styling  */
   main {
@@ -166,27 +217,28 @@ body {
   }
 
   .projects > ul > li {
-      border: 1px solid #29434e;
+      border: 1px solid #424242;
       border-radius: 0.5rem;
   }
 
   .projects > ul > li > figure {
-      max-height: 220px;
+      max-height: 300px;
       overflow: hidden;
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem;
       position: relative;
   }
 
-  .projects > ul > li > figure > img {
+  .projects > ul > li > figure > a > img {
       width: 100%;
+      object-fit: cover;
   }
 
   .projects > ul > li > figure > figcaption {
       position: absolute;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
+      border-top-right-radius: 0.225em;
   }
 
   .projects > ul > li > figure > figcaption > h3 {
@@ -199,12 +251,14 @@ body {
       font-size: 1rem;
       line-height: 1.5;
       padding: 1rem 0.75rem;
+      margin: 0;
   }
 
   .projects > ul > li > a {
       padding: 0.5rem 1rem;
       margin: 0.5rem;
-      background-color: #29434e;
+      margin-top: 0;
+      background-color: #6b98af;
       text-decoration: none;
       color: #fff;
       border-radius: 0.25rem;
@@ -217,6 +271,9 @@ body {
       opacity: 0.6;
   }
 
+  .projects > ul > li:first-child {
+      grid-column: span 2;
+  }
 
 
 
