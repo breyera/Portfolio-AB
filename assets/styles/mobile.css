@@ -345,8 +345,6 @@
    */
 
 
-
-
 body, html {
     height: 100%;
     margin: 0;
@@ -367,8 +365,34 @@ body, html {
 }
 /* finished styling nav  */
 
-/* style about  */
+main {
+    padding-bottom: 1rem;
+}
 
+/* style about me section */
+.about {
+    padding: 0;
+}
+
+.about h2 {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.about {
+    flex-direction: column;
+}
+
+.about p {
+    padding: 0;
+    text-align: center;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+/* completed about me styling */
 
 
 /* style projects section for mobile */
@@ -387,6 +411,28 @@ body, html {
 #contact h2 {
     text-align: center;
 }
+/* completed projects styling */
 
+/* start styling contact section */
+.contact {
+    flex-direction: column;
+}
 
+.contact .more-info {
+    width: auto;
+    padding: 0 1rem;
+}
 
+.contact .more-info p {
+    margin-bottom: 0;
+}
+
+.contact .connect {
+    border-left: none;
+    width: auto;
+    padding: 2rem 1rem 1rem;
+}
+
+.contact .connect h3 {
+    padding-bottom: 0;
+}
