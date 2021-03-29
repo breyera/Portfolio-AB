@@ -6,9 +6,10 @@
 
 body {
   height: 100%;
-  font: normal 16px Arial, Helvetica, sans-serif;
+  font: normal 16px "Noto Sans", sans-serif;
   background-color: #fafafa;
   line-height: 1.4em;
+  background-color: #1c313a;
 }
 
 a:visited {
@@ -164,10 +165,12 @@ nav span {
 /* start main styling  */
 main {
   width: 80%;
-  margin: auto;
+  margin: 2rem auto auto;
   min-height: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
   color: #29434e;
+  background: #fafafa;
+  border-radius: 5px;
 }
 
 h2,
@@ -278,7 +281,7 @@ p {
   bottom: 0rem;
   padding: 1rem;
   color: white;
-  /*     background-color: rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 1.5s ease;
   width: 100%;
 }
@@ -429,5 +432,5 @@ footer div {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding-top: 1.2rem;
+  padding-top: 0.8rem;
 }
