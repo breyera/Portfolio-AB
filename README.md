@@ -6,7 +6,7 @@ In this project, I was tasked with building a portfolio site, from scratch, to h
 
 In order for people with different screen sizes to view the site, I added a mobile view CSS sheet for responsiveness. I also used flexbox and css grid to format the site, both for desktop and for mobile.
 
-As I learn JavaScript, I hope to update this site to make the mobile view easier - such as adding a hamburger menu for the navigation.
+As I continue learning, I hope to update this site and continue making improvements.
 
 ### Link
 
